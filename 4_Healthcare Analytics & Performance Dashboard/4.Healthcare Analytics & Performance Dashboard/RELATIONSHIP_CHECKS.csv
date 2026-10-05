@@ -1,0 +1,15 @@
+check,key,pass,value,rows
+patients,patient_id,True,20000,20000
+facilities,facility_id,True,300,300
+doctors,doctor_id,True,2000,2000
+staff,staff_id,True,5000,5000
+ambulances,ambulance_id,True,300,300
+transfers,transfer_id,True,10000,10000
+pharmacies,pharmacy_id,True,1000,1000
+patients->facilities,facility_id->facility_id,True,0,20000
+patients->doctors,doctor_id->doctor_id,True,0,20000
+transfers->patients,patient_id->patient_id,True,0,10000
+transfers->facilities,from_facility_id->facility_id,True,0,10000
+transfers->facilities,to_facility_id->facility_id,True,0,10000
+transfers->ambulances,ambulance_id->ambulance_id,True,0,10000
+resource_usage->facilities,facility_id->facility_id,True,0,15000

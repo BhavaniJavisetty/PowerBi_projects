@@ -1,0 +1,8 @@
+one_table,one_key,many_table,many_key,cardinality
+facilities,facility_id,patients,facility_id,1:*
+doctors,doctor_id,patients,doctor_id,1:*
+patients,patient_id,transfers,patient_id,1:*
+facilities,facility_id,transfers,from_facility_id,1:*
+facilities,facility_id,transfers,to_facility_id,1:*
+ambulances,ambulance_id,transfers,ambulance_id,1:*
+facilities,facility_id,resource_usage,facility_id,1:*
